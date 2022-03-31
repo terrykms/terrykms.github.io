@@ -1,4 +1,14 @@
-a i{
+i{
     color: rgb(0,0,0);
     display: inline-block;
+    font-size: 3rem;
+}
+
+.icon-link {
+    text-decoration: none;
+    border:none;
+}
+
+footer {
+    background-color: rgba(150,150,150, 0.5)
 }
