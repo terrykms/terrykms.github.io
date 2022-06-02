@@ -1,14 +1,71 @@
+body {
+    font-family: Montserrat, Helvetica, Arial;
+    position: relative;
+}
+
+nav {
+    transition: 1s all ease;
+}
+
+
+.navbar-color {
+    background-color: #1a2238;
+}
+
+.navbar-brand i {
+    font-size: 2em;
+    color: #ff6a3d
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: "Bebas Neue";
+}
+
 i{
-    color: rgb(0,0,0);
+    color: #efefef;
     display: inline-block;
     font-size: 3rem;
 }
 
 .icon-link {
     text-decoration: none;
-    border:none;
+    border: none;
+}
+
+section {
+    padding-top: 100px;
 }
 
 footer {
-    background-color: rgba(150,150,150, 0.5)
+    background-color: #1a2238
 }
+
+span.button {
+    border: 2px solid #f4db7d ;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    transition: transform .2s
+}
+
+a.button {
+    text-decoration: none;
+    color: #f4db7d;
+    font-weight:300
+}
+
+#intro {
+    background-color:#1a2238;
+    color: #efefef;
+    text-align: center;
+}
+
+#intro p {
+    color: #9daaf2
+}
+
