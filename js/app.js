@@ -11,6 +11,8 @@ var typed = new Typed("#typed", {
 
 
 
+
+
 // window.onscroll = changeNavbarColor;
 
 // function changeNavbarColor() {

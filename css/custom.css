@@ -1,6 +1,8 @@
 body {
     font-family: Montserrat, Helvetica, Arial;
     position: relative;
+    background-color: #212226;
+    color: #efefef
 }
 
 nav {
@@ -9,23 +11,55 @@ nav {
 
 
 .navbar-color {
-    background-color: #1a2238;
+    background-color: #212226;
 }
 
 .navbar-brand i {
     font-size: 2em;
-    color: #ff6a3d
+    color: #f4db7d
 }
 
+.about p {
+    text-align: justify;
+}
+
+
 h1 {
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 56px;
+    font-family: "Titillium Web"
 }
 
 h2 {
     font-family: "Bebas Neue";
+    opacity: 0.7;
 }
 
+h3 {
+    font-size: 22px;
+}
+
+.inner-container {
+    margin-bottom: 2em;
+}
+
+
+/*--------- Emphasis span ----------*/
+span.highlight {
+    color: #f4db7d;
+}
+
+span.highlight a {
+    color: #f4db7d;
+    text-decoration: none;
+}
+
+span.highlight a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*--------- Social Media Icons ----------*/
 i{
     color: #efefef;
     display: inline-block;
@@ -42,9 +76,11 @@ section {
 }
 
 footer {
-    background-color: #1a2238
+    background-color: #212226
 }
 
+
+/*--------- Resume Button ----------*/
 span.button {
     border: 2px solid #f4db7d ;
     margin: 1em;
@@ -59,13 +95,53 @@ a.button {
     font-weight:300
 }
 
+
+/*--------- section #intro ----------*/
+
 #intro {
-    background-color:#1a2238;
-    color: #efefef;
+    padding: 0;
     text-align: center;
+    background-color: #212226;
 }
 
 #intro p {
     color: #9daaf2
 }
 
+
+/*--------- section #experience ----------*/
+
+h3.job-title {
+    display:inline
+}
+
+.company {
+    color: #efefef;
+    font-style: italic;
+}
+
+.date {
+    text-align: start;
+    font-size: small;
+    text-transform: uppercase;
+    color:#9daaf2
+}
+
+ul.role-description {
+    opacity: 0.7;
+    list-style-position: inside;
+}
+
+
+
+/*--------- Media Queries ----------*/
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 84px;
+    }
+
+    .date {
+        text-align: end;
+    }
+}
