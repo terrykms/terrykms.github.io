@@ -10,6 +10,8 @@
 
       <!-- Bootstrap icons -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+      <!-- Devicon icons -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> -->
       
       <!-- custom CSS -->
       <link href="css/custom.css" rel="stylesheet">
@@ -60,7 +62,7 @@
               <span id="typed"></span><br>
               <span>-</span>
               <p>	&#128736 Engineering | &#128300 Research | &#9749 Coffee </p> <br>
-              <span class="button"><a class="button" href="javascript:void(0)">Resume</a></span>
+              <a class="button" href="Resume_Minseo.pdf" target="_blank">Resume</a>
             </div>
           </div>
         </div>
@@ -70,10 +72,11 @@
       <section id="about">
           <div class="container">
             <div class="row">
-              <div class="col-lg-4 col-12">
+              <div class="col-lg-4 col-12 justify-content-center reveal">
                 <h2 class="text-center">About</h2>
+                <img class="profile mx-auto d-block mb-2" src="img/profile-picture-square-1024x1024.jpeg" alt="Profile picture">
               </div>
-              <div class="col-lg-8 col-12 js-scroll">
+              <div class="col-lg-8 col-12 inner-container reveal">
                 <p>I am an undergraduate student studying 
                   <span class="highlight">Chemical and Biomolecular Engineering</span> 
                   at Nanyang Technological University (NTU), Singapore, under the
@@ -99,11 +102,11 @@
           <div class="container">
               <div class="row">
                 <div class="col-lg-4 col-12">
-                  <h2 class="text-center">Experience</h2>
+                  <h2 class="text-center reveal">Experience</h2>
                 </div>
                 <div class="col-lg-8 col-12">
                   <!-- first company -->
-                  <div class="inner-container">
+                  <div class="inner-container reveal">
                     <div class="row">
                       <div class="col-lg-8 col-12"><h3 class="job-title">Software Development Intern</h3></div>
                       <div class="col-lg-4 col-12 date">MAY 2022 - PRESENT</div>
@@ -117,7 +120,7 @@
                     </div>
                   </div>
                   <!-- second company -->
-                  <div class="inner-container">
+                  <div class="inner-container reveal">
                     <div class="row">
                       <div class="col-lg-8 col-12"><h3 class="job-title">Undergraduate Student Research Intern</h3></div>
                       <div class="col-lg-4 col-12 date">JAN 2022 - PRESENT</div>
@@ -141,11 +144,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-12">
-              <h2 class="text-center">Education</h2>
+              <h2 class="text-center reveal">Education</h2>
             </div> 
             <div class="col-lg-8 col-12">
               <!-- first education -->
-              <div class="inner-container">
+              <div class="inner-container reveal">
                 <div class="row">
                   <div class="col-lg-8 col-12"><h3 class="institution-name">Nanyang Technological University</h3></div>
                   <div class="col-lg-4 col-12 date">AUG 2020 - PRESENT</div>
@@ -156,7 +159,7 @@
                 </div>
               </div>
               <!-- second education -->
-              <div class="inner-container">
+              <div class="inner-container reveal">
                 <div class="row">
                   <div class="col-lg-8 col-12"><h3 class="institution-name">Victoria Junior College</h3></div>
                   <div class="col-lg-4 col-12 date">JAN 2018 - DEC 2019</div>
@@ -166,7 +169,6 @@
                   <div class="col-12"></div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>          
@@ -177,7 +179,67 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-12">
-              <h2 class="text-center">Projects</h2>
+              <h2 class="text-center reveal">Projects</h2>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="inner-container reveal">
+                <div class="row mb-1">
+                  <h3 class="project-header">Academic Projects</h3>
+                </div>
+                <div class="row">
+                  <!-- bootstrap accordion -->
+                  <div class="accordion" id="acadProj">
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Classifications of Soundscapes with Deep Learning Algorithm
+                        </button>
+                      </h4>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#acadProj">
+                        <div class="accordion-body">
+                          Digital Signal Processing Lab, School of Electrical and Electronic Engineering (EEE)
+                          <ul>
+                            <li>Implemented convolutional neural network (CNN) architecture as a predictive model for soundscape affective responses. Mel spectrograms and mel-frequency cepstral coefficients (MFCCs) were analysed as optimised inputs for the deep learning model.</li>
+                            <li>Continued the research attachment as an undergraduate intern.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Video Summarisation in Surveillance and Security Systems
+                        </button>
+                      </h4>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#acadProj">
+                        <div class="accordion-body">
+                          SCALE@NTU, School of Computer Science and Engineering (SCSE)
+                          <ul>
+                            <li>Experimented with existing convolutional neural networks on human activity recognition (HAR) with Tensorflow/Keras.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Emissions from Rare-Earth (RE) Ions by the Energy Transfer from ZnO Nanocrystals Embedded in SiO2 Film
+                        </button>
+                      </h4>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#acadProj">
+                        <div class="accordion-body">
+                          School of Electrical and Electronic Engineering (EEE)
+                          <ul>
+                            <li>Part of the Nanyang Research Programme for Junior College students.</li>
+                            <li>Proposed a new method of predicting the concentrations of Europium and Terbium ions needed for photoluminescence of white light with the use of MATLAB.</li>
+                            <li>Awarded 'Gold' among 150 different research projects presented.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -188,7 +250,30 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-12">
-              <h2 class="text-center">Skills</h2>
+              <h2 class="text-center reveal">Skills</h2>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="inner-container reveal">
+                  <h3 class="text-center">Web Development</h3>
+                  <div class="row justify-content-center">
+                    <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                    <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                    <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                    <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+                    <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original-wordmark.svg" />        
+                    <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+                  </div>
+              </div>
+              <div class="inner-container reveal">
+                <h3 class="text-center">Data Science</h3>
+                <div class="row justify-content-center">
+                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />
+                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg" />
+                  <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" />      
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -198,8 +283,8 @@
       <!-- CONTACT -->
       <footer id="contact" class="p-3">
         <div class= "container">
-          <div class="row text-center">
-            <div>
+          <div class="row text-end">
+            <div class="col-12">
               <a class="icon-link" href="https://www.linkedin.com/in/minseo-kim-60a272202/">
                 <i class="bi-linkedin m-2" role="img" aria-label="LinkedIn"></i>
               </a>

@@ -7,7 +7,24 @@ var typed = new Typed("#typed", {
     loop: true
 });
 
+const _ELEMENT_VISIBLE_TRIGGER = 100;
 
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    reveals.forEach(item => {
+        var windowHeight = window.innerHeight;
+        var elementTop = item.getBoundingClientRect().top;
+        var elementVisible = _ELEMENT_VISIBLE_TRIGGER;
+
+        if (elementTop < windowHeight - elementVisible) {
+            item.classList.add("active");
+        } else {
+            item.classList.remove("active");
+        }
+    })
+}
+
+window.addEventListener("scroll", reveal)
 
 
 
