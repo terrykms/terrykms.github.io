@@ -59,12 +59,12 @@ nav {
     transition: 1.5s all ease;
 }
 
-.reveal.active {
+.reveal.current {
     transform: translateY(0px);
     opacity: 1
 }
 
-h2.reveal.active {
+h2.reveal.current {
     opacity: 0.7;
 }
 
@@ -152,7 +152,7 @@ ul.role-description{
 }
 
 
-/*--------- section #projects ----------*/
+/*--------- section #projects (DESIGN 1) ----------*/
 
 .accordion-button {
     background-color: #52545e !important;
@@ -179,6 +179,104 @@ ul.role-description{
     font-weight: bolder;
     color:#9daaf2
 }
+
+
+/*--------- section #projects (DESIGN 2) ----------*/
+
+/* navigation */ 
+span.nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #efefef;
+    transition: all 0.2s ease;
+}
+
+span.nav-link:hover {
+    color:#f4db7d
+}
+
+span.nav-link.active {
+    color:#f4db7d;
+}
+
+/* project container */
+
+.project-container {
+    background-color:#2c2d32;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    width: 90%;
+    padding: 1em;
+    margin-right: 1em;
+    display: none;
+}
+
+.project-container.active {
+    display: block;
+}
+
+.project-title {
+    font-size: 18px;
+}
+
+.project-title-container {
+    border-bottom: 1px solid #efefef;
+}
+
+.project-designation {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.project-designation ~ p {
+    font-size: 14px;
+}
+
+span.keywords {
+    color:#f4db7d;
+    font-size: 12px;
+}
+
+span.btn {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+}
+
+span.btn i{
+    font-size: 1em;
+    color: #efefef !important;
+    transition: transform 0.2s ease;
+}
+
+span.btn i:hover {
+    transform: scale(1.1);
+}
+
+span.btn i.active {
+    transform: rotate(180deg);
+}
+
+.details p {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.details {
+    display: none;
+    opacity: 0;
+    transition: all 2s ease;
+    margin-top: 5px;
+}
+
+.details.active {
+    display: block;
+    opacity: 1
+
+}
+
+/* miscellaneous */
 
 code {
     color: #efefef;
@@ -252,5 +350,13 @@ a:hover {
 
     .date {
         text-align: end;
+    }
+
+    .project-container {
+        width: 45%;
+        display: none;
+    }
+    .project-container.active {
+        display: inline-block;
     }
 }

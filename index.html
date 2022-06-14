@@ -56,8 +56,9 @@
               <span>Hi, my name is</span>
               <h1 class="fw-bold text-uppercase">Minseo Kim</h1>
               <div id="typed-strings">
-                <p>Aspiring Software Architect</p>
-                <p>Front-end Development</p>
+                <p>Full-stack Web Development</p>
+                <p>Intuitive UI/UX</p>
+                <p>Clarinetist & Photographer on the side</p>
               </div>
               <span id="typed"></span><br>
               <span>-</span>
@@ -114,6 +115,7 @@
                     <div class="row">
                       <div class="col-12 company">El Pando Pte Ltd | Singapore</div>
                       <ul class="role-description">
+                        <!-- search engine optimisation -->
                         <li class="role-item">Tasked with the Front-end design of the new company website.</li>
                         <li class="role-item">Hands-on experience with ASP.NET Code-behind approach.</li>
                       </ul>
@@ -182,125 +184,105 @@
               <h2 class="text-center reveal">Projects</h2>
             </div>
             <div class="col-lg-8 col-12">
-              <!-- first project container -->
-              <div class="inner-container reveal">
-                <div class="row mb-1">
-                  <h3 class="project-header">Academic Projects</h3>
+              <!-- filter panel -->
+              <nav class="nav projects reveal">
+                <span class="nav-link active" data-value="academic">Academic</span>
+                <span class="nav-link" data-value="case-competition">Case Competitions</span>
+                <span class="nav-link" data-value="personal-project">Personal</span>
+                <span class="nav-link" data-value="all">All</span>
+              </nav>
+              <!-- project 1 -->
+              <div class="project-container reveal" data-value="academic">
+                <div class="project-title-container mb-2">
+                  <h3 class="project-title">Classifications of Soundscapes with Deep Learning Algorithm</h3>
                 </div>
                 <div class="row">
-                  <!-- bootstrap accordion -->
-                  <div class="accordion" id="acadProj">
-                    <div class="accordion-item">
-                      <h4 class="accordion-header" id="acadProjOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Classifications of Soundscapes with Deep Learning Algorithm
-                        </button>
-                      </h4>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="acadProjOne" data-bs-parent="#acadProj">
-                        <div class="accordion-body">
-                          Digital Signal Processing Lab, School of Electrical and Electronic Engineering (EEE)
-                          <ul>
-                            <li>Implemented convolutional neural network (CNN) architecture as a predictive model for soundscape affective responses. Mel spectrograms and mel-frequency cepstral coefficients (MFCCs) were analysed as optimised inputs for the deep learning model.</li>
-                            <li>Continued the research attachment as an undergraduate intern.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h4 class="accordion-header" id="acadProjTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Video Summarisation in Surveillance and Security Systems
-                        </button>
-                      </h4>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="acadProjTwo" data-bs-parent="#acadProj">
-                        <div class="accordion-body">
-                          SCALE@NTU, School of Computer Science and Engineering (SCSE)
-                          <ul>
-                            <li>Experimented with existing convolutional neural networks on human activity recognition (HAR) with Tensorflow/Keras.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h4 class="accordion-header" id="acadProjThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Emissions from Rare-Earth (RE) Ions by the Energy Transfer from ZnO Nanocrystals Embedded in SiO2 Film
-                        </button>
-                      </h4>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="acadProjThree" data-bs-parent="#acadProj">
-                        <div class="accordion-body">
-                          School of Electrical and Electronic Engineering (EEE)
-                          <ul>
-                            <li>Part of the Nanyang Research Programme for Junior College students.</li>
-                            <li>Proposed a new method of predicting the concentrations of Europium and Terbium ions needed for photoluminescence of white light with the use of MATLAB.</li>
-                            <li>Awarded 'Gold' among 150 different research projects presented.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                  <h4 class="project-designation">Digital Signal Processing Lab, School of Electrical and Electronic Engineering (EEE)</h4>
+                  <div class="position-relative">
+                    <span class="keywords ">Convolutional Neural Networks | Audio Analysis</span>
+                    <span class="btn"><i class="bi bi-caret-down"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Implemented convolutional neural network (CNN) architecture as a predictive model for soundscape affective responses.</p>
+                    <p>Mel spectrograms and mel-frequency cepstral coefficients (MFCCs) were analysed as optimised inputs for the deep learning model.</p>
                   </div>
                 </div>
               </div>
-              <!-- second project container -->
-              <div class="inner-container reveal">
-                <div class="row mb-1">
-                  <h3 class="project-header">Case Competitions</h3>
+              <!-- project 2 -->
+              <div class="project-container reveal" data-value="academic">
+                <div class="project-title-container mb-2">
+                  <h3 class="project-title">Video Summarisation in Surveillance and Security Systems</h3>
                 </div>
                 <div class="row">
-                  <div class="accordion" id="caseComp">
-                    <div class="accordion-item">
-                      <h4 class="accordion-header" id="caseCompOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaseCompOne" aria-expanded="true" aria-controls="collapseCaseCompOne">
-                          NUS Fintech Month 2022 Blockchain Hackathon
-                        </button>
-                      </h4>
-                      <div id="collapseCaseCompOne" class="accordion-collapse collapse show" aria-labelledby="caseCompOne" data-bs-parent="#caseComp">
-                        <div class="accordion-body">
-                          Problem Statement: ”NFTs: Mint, Market or Monetize”
-                          <ul>
-                            <li>Proposed the creation of a decentralized NFT marketplace that provides the gateway to create universal NFTs that can exist across multiple-chains.</li>
-                            <li>Presented our prototype in semi-finals for being the top 29 teams out of 100 teams.</li>
-                            <li>Do check out our <a href="https://www.youtube.com/watch?v=osxFvLn8lTA" target="_blank">prototype</a>!</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                  <h4 class="project-designation">SCALE@NTU, School of Computer Science and Engineering (SCSE)</h4>
+                  <div class="position-relative">
+                    <span class="keywords ">Human Activity Recognition | Deep Learning</span>
+                    <span class="btn"><i class="bi bi-caret-down"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Experimented with existing convolutional neural networks on human activity recognition (HAR) with Tensorflow/Keras.</p>
                   </div>
                 </div>
               </div>
-              <!-- third project container -->
-              <div class="inner-container reveal">
-                <div class="row mb-1">
-                  <h3 class="project-header">Personal Projects</h3>
+              <!-- project 3-->
+              <div class="project-container reveal" data-value="academic">
+                <div class="project-title-container mb-2">
+                  <h3 class="project-title">Emissions from Rare-Earth (RE) Ions by the Energy Transfer from ZnO Nanocrystals Embedded in SiO<sub>2</sub> Film</h3>
                 </div>
-                <div class="row justify-content-center">
-                  <div class="card">
-                    <img src="img/weather-app-1.png" class="card-img-top" alt="Screenshots of a simple weather app.">
-                    <div class="card-body">
-                      <h4 class="card-title text-center">Simple Weather App</h4>
-                      <p class="card-text">
-                        Utilized OpenWeatherMap Weather API with <code>jQuery.ajax()</code>. Project was done to familiarise myself with jQuery syntax and AJAX. 
-                        <h5 class="list-header">Features:</h5>
-                        <ol>
-                          <li>Search bar shows a list of suggested locations (cities) when user types in letter by letter.</li>
-                          <li><code>{city name},{state code},{country code}</code> is stored as a variable and passed as a parameter in the Geocoding API.</li>
-                          <li>GEOCODING API fetches the latitude & longitude values, which are then used to fetch the data from Current Weather Data API.</li>
-                          <li>If successful, <code>jQuery.ajax()</code> returns a JSON object and the relevant data is rendered into the HTML DOM. </li>
-                        </ol>
-                        <div class="text-end">
-                          <a href="https://github.com/terrykms/weather-app" target="_blank">
-                            <img class="shields-io" src="https://img.shields.io/badge/Source%20Code-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github">
-                          </a>
-                        </div>
-                      </p>
-                      <div class="tech-stack text-end">
-                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5 icon"/>
-                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3 icon" />
-                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap icon"/>
-                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon" />
-                        <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="jQuery icon" />
-                      </div>
-                    </div>
+                <div class="row">
+                  <h4 class="project-designation">School of Electrical and Electronic Engineering (EEE)</h4>
+                  <div class="position-relative">
+                    <span class="keywords ">Photoluminiscence | MATLAB</span>
+                    <span class="btn"><i class="bi bi-caret-down"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Part of the Nanyang Research Programme for Junior College students.</p>
+                    <p>Proposed a new method of predicting the concentrations of Europium and Terbium ions needed for photoluminescence of white light with the use of MATLAB.</p>
+                    <p>Awarded 'Gold' among 150 different research projects presented.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- project 4-->
+              <div class="project-container reveal" data-value="case-competition">
+                <div class="project-title-container mb-2">
+                  <h3 class="project-title">NUS Fintech Month 2022 Blockchain Hackathon</h3>
+                </div>
+                <div class="row">
+                  <h4 class="project-designation">Problem Statement: ”NFTs: Mint, Market or Monetize”</h4>
+                  <div class="position-relative">
+                    <span class="keywords ">Decentralized NFT MarketPlace | Multiple Chains</span>
+                    <span class="btn"><i class="bi bi-caret-down"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Proposed the creation of a decentralized NFT marketplace that provides the gateway to create universal NFTs that can exist across multiple-chains.</p>
+                    <p>Presented our prototype in semi-finals for being the top 29 teams out of 100 teams.</p>
+                    <p>Do check out our <a href="https://www.youtube.com/watch?v=osxFvLn8lTA" target="_blank">prototype</a>!</p>
+                  </div>
+                </div>
+              </div>
+              <!-- project 5 -->
+              <div class="project-container reveal" data-value="personal-project">
+                <div class="project-title-container mb-2">
+                  <h3 class="project-title">Simple Weather App</h3>
+                </div>
+                <div class="row">
+                  <h4 class="project-designation">OpenWeatherMap Weather API & <code>jQuery.ajax()</code></h4>
+                  <div class="text-start">
+                    <a href="https://github.com/terrykms/weather-app" target="_blank">
+                      <img class="shields-io" src="https://img.shields.io/badge/Source%20Code-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github">
+                    </a>
+                  </div>
+                  <div class="position-relative">
+                    <span class="keywords ">AJAX | API | jQuery</span>
+                    <span class="btn"><i class="bi bi-caret-down"></i></span>
+                  </div>
+                  <div class="details">
+                    <ol>
+                      <li>Search bar shows a list of suggested locations (cities) when user types in letter by letter.</li>
+                      <li><code>{city name},{state code},{country code}</code> is stored as a variable and passed as a parameter in the Geocoding API.</li>
+                      <li>GEOCODING API fetches the latitude & longitude values, which are then used to fetch the data from Current Weather Data API.</li>
+                      <li>If successful, <code>jQuery.ajax()</code> returns a JSON object and the relevant data is rendered into the HTML DOM. </li>
+                    </ol>
                   </div>
                 </div>
               </div>
