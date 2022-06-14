@@ -12,7 +12,8 @@ body {
 
 h1 {
     font-size: 56px;
-    font-family: "Titillium Web"
+    font-family: "Titillium Web";
+    text-shadow: 3px 3px #f4db7d
 }
 
 h2 {
@@ -189,13 +190,23 @@ code {
     margin-left: 1em;
 }
 
+.shields-io {
+    transition: all 0.2s ease;
+}
+
+.shields-io:hover {
+    transform: scale(1.05);
+}
+
 /*--------- section #skills ----------*/
+
 .skill-icon {
     width: 100px;
     height: 100px;
 }
 
 /*--------- Social Media Icons (section #contacts) ----------*/
+
 i{
     color: #efefef;
     display: inline-block;
