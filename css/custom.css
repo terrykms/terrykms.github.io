@@ -24,7 +24,9 @@ h3 {
     font-size: 22px;
 }
 
-
+.justify-text {
+    text-align: justify;
+}
 
 .inner-container {
     margin-bottom: 2em;
@@ -189,14 +191,18 @@ span.nav-link {
     text-decoration: none;
     color: #efefef;
     transition: all 0.2s ease;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
 }
 
 span.nav-link:hover {
-    color:#f4db7d
+    color:#f4db7d;
 }
 
 span.nav-link.active {
     color:#f4db7d;
+    background-color: #2c2d32;
 }
 
 /* project container */
@@ -204,11 +210,11 @@ span.nav-link.active {
 .project-container {
     background-color:#2c2d32;
     border-radius: 5px;
-    margin-bottom: 1em;
     width: 90%;
     padding: 1em;
-    margin-right: 1em;
+    margin: 0 auto 1em;
     display: none;
+    position: relative;
 }
 
 .project-container.active {
@@ -296,6 +302,9 @@ code {
     transform: scale(1.05);
 }
 
+.project-label {
+}
+
 /*--------- section #skills ----------*/
 
 .skill-icon {
@@ -330,6 +339,16 @@ footer {
     background-color: #212226
 }
 
+.footer-badge {
+    width: 120px;
+}
+
+.footer-badge img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* ------ link styling ---- */
 a {
     color: #f4db7d;
@@ -353,7 +372,7 @@ a:hover {
     }
 
     .project-container {
-        width: 45%;
+        width: 49%;
         display: none;
     }
     .project-container.active {

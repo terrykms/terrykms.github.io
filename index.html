@@ -77,7 +77,7 @@
                 <h2 class="text-center" style="opacity:0.7">About</h2>
                 <img class="profile mx-auto d-block mb-2" src="img/profile-picture-square-1024x1024.jpeg" alt="Profile picture">
               </div>
-              <div class="col-lg-8 col-12 inner-container reveal">
+              <div class="col-lg-8 col-12 inner-container reveal about">
                 <p>I am an undergraduate student studying 
                   <span class="highlight">Chemical and Biomolecular Engineering</span> 
                   at Nanyang Technological University (NTU), Singapore, under the
@@ -181,16 +181,16 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-12">
-              <h2 class="text-center reveal">Projects</h2>
-            </div>
-            <div class="col-lg-8 col-12">
+              <h2 class="text-center reveal mb-lg-5">Projects</h2>
               <!-- filter panel -->
-              <nav class="nav projects reveal">
+              <nav class="nav projects reveal flex-lg-column text-center mb-3">
                 <span class="nav-link active" data-value="academic">Academic</span>
                 <span class="nav-link" data-value="case-competition">Case Competitions</span>
                 <span class="nav-link" data-value="personal-project">Personal</span>
                 <span class="nav-link" data-value="all">All</span>
               </nav>
+            </div>
+            <div class="col-lg-8 col-12 justify-text">
               <!-- project 1 -->
               <div class="project-container reveal" data-value="academic">
                 <div class="project-title-container mb-2">
@@ -198,14 +198,16 @@
                 </div>
                 <div class="row">
                   <h4 class="project-designation">Digital Signal Processing Lab, School of Electrical and Electronic Engineering (EEE)</h4>
+                  <div class="text-start">
+                    <img class="project-label" src="https://img.shields.io/badge/-academic-red?style=flat" alt="Label:Academic">
+                  </div>
                   <div class="position-relative">
                     <span class="keywords ">Convolutional Neural Networks | Audio Analysis</span>
                     <span class="btn"><i class="bi bi-caret-down"></i></span>
                   </div>
                   <div class="details">
                     <p>Implemented convolutional neural network (CNN) architecture as a predictive model for soundscape affective responses.</p>
-                    <p>Mel spectrograms and mel-frequency cepstral coefficients (MFCCs) were analysed as optimised inputs for the deep learning model.</p>
-                  </div>
+                    <p>Mel spectrograms and mel-frequency cepstral coefficients (MFCCs) were analysed as optimised inputs for the deep learning model.</p>                  </div>
                 </div>
               </div>
               <!-- project 2 -->
@@ -215,6 +217,9 @@
                 </div>
                 <div class="row">
                   <h4 class="project-designation">SCALE@NTU, School of Computer Science and Engineering (SCSE)</h4>
+                  <div class="text-start">
+                    <img class="project-label" src="https://img.shields.io/badge/-academic-red?style=flat" alt="Label:Academic">
+                  </div>
                   <div class="position-relative">
                     <span class="keywords ">Human Activity Recognition | Deep Learning</span>
                     <span class="btn"><i class="bi bi-caret-down"></i></span>
@@ -231,6 +236,9 @@
                 </div>
                 <div class="row">
                   <h4 class="project-designation">School of Electrical and Electronic Engineering (EEE)</h4>
+                  <div class="text-start">
+                    <img class="project-label" src="https://img.shields.io/badge/-academic-red?style=flat" alt="Label:Academic">
+                  </div>
                   <div class="position-relative">
                     <span class="keywords ">Photoluminiscence | MATLAB</span>
                     <span class="btn"><i class="bi bi-caret-down"></i></span>
@@ -249,6 +257,12 @@
                 </div>
                 <div class="row">
                   <h4 class="project-designation">Problem Statement: ”NFTs: Mint, Market or Monetize”</h4>
+                  <div class="text-start">
+                    <img class="project-label" src="https://img.shields.io/badge/-case%20competition-yellow?style=flat" alt="Label:Academic">
+                    <a href="https://www.youtube.com/watch?v=osxFvLn8lTA" target="_blank">
+                      <img class="shields-io" src="https://img.shields.io/badge/Prototype-%23FF0000.svg?style=flat&logo=YouTube&logoColor=white" alt="Youtube">
+                    </a>
+                  </div>
                   <div class="position-relative">
                     <span class="keywords ">Decentralized NFT MarketPlace | Multiple Chains</span>
                     <span class="btn"><i class="bi bi-caret-down"></i></span>
@@ -256,7 +270,6 @@
                   <div class="details">
                     <p>Proposed the creation of a decentralized NFT marketplace that provides the gateway to create universal NFTs that can exist across multiple-chains.</p>
                     <p>Presented our prototype in semi-finals for being the top 29 teams out of 100 teams.</p>
-                    <p>Do check out our <a href="https://www.youtube.com/watch?v=osxFvLn8lTA" target="_blank">prototype</a>!</p>
                   </div>
                 </div>
               </div>
@@ -268,8 +281,9 @@
                 <div class="row">
                   <h4 class="project-designation">OpenWeatherMap Weather API & <code>jQuery.ajax()</code></h4>
                   <div class="text-start">
+                    <img class="project-label" src="https://img.shields.io/badge/-personal-brightgreen?style=flat" alt="Label:Academic">
                     <a href="https://github.com/terrykms/weather-app" target="_blank">
-                      <img class="shields-io" src="https://img.shields.io/badge/Source%20Code-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github">
+                      <img class="shields-io" src="https://img.shields.io/badge/Source%20Code-%23121011.svg?style=flat&logo=github&logoColor=white" alt="Github">
                     </a>
                   </div>
                   <div class="position-relative">
@@ -327,10 +341,15 @@
 
 
       <!-- CONTACT -->
-      <footer id="contact" class="p-3">
+      <footer id="contact" class="pt-5 pb-2">
         <div class= "container">
           <div class="row">
-            <div class="col-12 text-end">
+            <div class="col-12 text-center">
+              <div class="footer-badge mx-auto">
+                <a href="https://github.com/terrykms/terrykms.github.io/" target="_blank">
+                  <img class="shields-io" src="https://img.shields.io/badge/Source%20Code-%23121011.svg?style=flat&logo=github&logoColor=white" alt="Github">
+                </a>
+              </div>
               <a class="icon-link email" href="mailto:terrykms30@gmail.com">
                 <i class="bi bi-envelope p-2" role="img" aria-label="Email"></i>
               </a>
@@ -343,6 +362,8 @@
               <a class="icon-link" href="https://www.instagram.com/terrykms_/" target="_blank">
                 <i class="bi bi-instagram p-2" role="img" aria-label="Instagram"></i>
               </a>
+            </div>
+            <div class="col-6 text-end">
             </div>
           </div>
         </div>
