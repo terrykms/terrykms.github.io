@@ -5,20 +5,6 @@ body {
     color: #efefef
 }
 
-nav {
-    transition: 1s all ease;
-}
-
-
-.navbar-color {
-    background-color: #212226;
-}
-
-.navbar-brand i {
-    font-size: 2em;
-    color: #f4db7d
-}
-
 .about p {
     text-align: justify;
 }
@@ -37,6 +23,8 @@ h3 {
     font-size: 22px;
 }
 
+
+
 .inner-container {
     margin-bottom: 2em;
     padding: 1em;
@@ -44,7 +32,21 @@ h3 {
     border-radius: 0.5em;
 }
 
+/* --------- navbar -------- */
 
+nav {
+    transition: 1s all ease;
+}
+
+
+.navbar-color {
+    background-color: #212226;
+}
+
+.navbar-brand i {
+    font-size: 2em;
+    color: #f4db7d
+}
 
  
 /* ---------- reveal content on scroll down -------- */
@@ -61,13 +63,17 @@ h3 {
     opacity: 1
 }
 
+h2.reveal.active {
+    opacity: 0.7;
+}
+
 
 /*--------- Emphasis span ----------*/
 span.highlight {
     color: #f4db7d;
 }
 
-span.highlight a {
+span.highlight {
     color: #f4db7d;
     text-decoration: none;
 }
@@ -96,6 +102,7 @@ a.button {
 a.button:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    text-decoration: none;
 }
 
 
@@ -139,14 +146,8 @@ h3.job-title {
 }
 
 ul.role-description{
-    opacity: 0.7;
+    color: #bebebe;
     list-style-position: inside;
-}
-
-/*--------- section #skills ----------*/
-.skill-icon {
-    width: 100px;
-    height: 100px;
 }
 
 
@@ -162,7 +163,36 @@ ul.role-description{
 }
 
 .accordion-body ul {
-    opacity: 0.7;
+    color: #bebebe;
+}
+
+.card {
+    width: 95%;
+    background-color: #52545e;
+    margin: 0;
+    padding: 0;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bolder;
+    color:#9daaf2
+}
+
+code {
+    color: #efefef;
+}
+
+.tech-stack .skill-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 1em;
+}
+
+/*--------- section #skills ----------*/
+.skill-icon {
+    width: 100px;
+    height: 100px;
 }
 
 /*--------- Social Media Icons (section #contacts) ----------*/
@@ -189,6 +219,17 @@ section {
 
 footer {
     background-color: #212226
+}
+
+/* ------ link styling ---- */
+a {
+    color: #f4db7d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4db7d;
+    text-decoration: underline;
 }
 
 /*--------- Media Queries ----------*/
