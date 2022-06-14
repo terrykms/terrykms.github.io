@@ -40,28 +40,14 @@ filters.forEach(item => {
     item.onclick = function() {
         // change active nav-link for each click
         filters.forEach(item => item.classList.remove("active"));
-        this.classList.add("active")
+        this.classList.add("active");
 
-        // data query
-        switch (item.getAttribute("data-value")) {
-            case "academic":
-                projects.forEach(project => {
-                    (project.getAttribute("data-value") == "academic") ? project.classList.add("active") : project.classList.remove("active")
-                });
-                break;
-            case "case-competition":
-                projects.forEach(project => {
-                    (project.getAttribute("data-value") == "case-competition") ? project.classList.add("active") : project.classList.remove("active")
-                });
-                break;
-            case "personal-project":
-                projects.forEach(project => {
-                    (project.getAttribute("data-value") == "personal-project") ? project.classList.add("active") : project.classList.remove("active")
-                });
-                break;
-            case "all": 
-                projects.forEach(project => project.classList.add("active"));
-                break;
+        if (this.getAttribute("data-value") != "all") {
+            for (var project of projects) {
+                (project.getAttribute("data-value") == item.getAttribute("data-value")) ? project.classList.add("active") : project.classList.remove("active");
+            }
+        } else {
+            projects.forEach(project => project.classList.add("active"));
         }
     }
 })
