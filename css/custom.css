@@ -37,9 +37,10 @@ h3 {
 
 /* --------- navbar -------- */
 
-nav {
-    transition: 1s all ease;
+.navbar {
+    transition: top 0.3s ease;
 }
+
 
 
 .navbar-color {

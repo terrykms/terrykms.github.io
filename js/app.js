@@ -30,8 +30,6 @@ arrow.forEach(item => {
 // projects filters
 var projects = document.querySelectorAll(".project-container");
 var filters = document.querySelectorAll(".projects .nav-link");
-// console.log(projects);
-// console.log(filters)
 
 // initialization
 projects.forEach(project => {
@@ -66,33 +64,17 @@ var typed = new Typed("#typed", {
 
 
 
+var navbar = document.querySelector(".navbar");
+var previousPageScroll = 0;
 
+window.onscroll = function() {
+    var currentPageScroll = window.scrollY;
 
-// function showNavbar() {
-//     var navbar = document.querySelector(".navbar");
-//     if (window.scrollY >= 200 ) {
-//         navbar.classList.add("navbar-color");
-//         navbar.classList.remove("transparent-bg");
-//     } else {
-//         navbar.classList.add("transparent-bg");
-//         navbar.classList.remove("navbar-color");
-//     }
-// }
+     // true("scroll up") -> show navbar : false("scroll down") -> hide navbar
+    if (currentPageScroll > 200) {
+        (previousPageScroll - currentPageScroll > 0) ? navbar.style.top = "0" : navbar.style.top ="-74px";
+    }
 
-// window.addEventListener("scroll", showNavbar)
-
-
-
-
-
-
-
-
-// function showNavbar() {
-//     var navbar = document.querySelector(".navbar");
-//     if (window.scrollY >= 100 ) {
-//         navbar.style.display = "block";
-//     } else {
-//         navbar.style.display = "none";
-//     }
-// }
+    // update
+    previousPageScroll = currentPageScroll;
+}
