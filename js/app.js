@@ -30,10 +30,13 @@ arrow.forEach(item => {
 // projects filters
 var projects = document.querySelectorAll(".project-container");
 var filters = document.querySelectorAll(".projects .nav-link");
+// console.log(projects);
+// console.log(filters)
 
 // initialization
 projects.forEach(project => {
-    (project.getAttribute("data-value") == "academic") ? project.classList.add("active") : project.classList.remove("active");
+    (project.getAttribute("data-value") == "academic") ? project.parentNode.classList.remove("hide") : project.parentNode.classList.add("hide");
+    // project.parentNode is  <div class="col-lg-6 col-12">
 })
 
 filters.forEach(item => {
@@ -44,10 +47,10 @@ filters.forEach(item => {
 
         if (this.getAttribute("data-value") != "all") {
             for (var project of projects) {
-                (project.getAttribute("data-value") == item.getAttribute("data-value")) ? project.classList.add("active") : project.classList.remove("active");
+                (project.getAttribute("data-value") == item.getAttribute("data-value")) ? project.parentNode.classList.remove("hide") : project.parentNode.classList.add("hide");
             }
         } else {
-            projects.forEach(project => project.classList.add("active"));
+            projects.forEach(project => project.parentNode.classList.remove("hide"));
         }
     }
 })

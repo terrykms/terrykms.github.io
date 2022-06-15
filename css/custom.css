@@ -207,18 +207,15 @@ span.nav-link.active {
 
 /* project container */
 
+.hide {
+    display: none;
+}
+
 .project-container {
     background-color:#2c2d32;
     border-radius: 5px;
-    width: 90%;
     padding: 1em;
-    margin: 0 auto 1em;
-    display: none;
-    position: relative;
-}
-
-.project-container.active {
-    display: block;
+    margin-bottom: 10px;
 }
 
 .project-title {
@@ -282,10 +279,14 @@ span.btn i.active {
 
 }
 
+.details ol {
+    padding-left: 15px;
+}
+
 /* miscellaneous */
 
 code {
-    color: #efefef;
+    color: #cdcdcd;
 }
 
 .tech-stack .skill-icon {
@@ -294,16 +295,19 @@ code {
     margin-left: 1em;
 }
 
+.shields-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
 .shields-io {
     transition: all 0.2s ease;
 }
 
-.shields-io:hover {
+.shields-link .shields-io:hover {
     transform: scale(1.05);
 }
 
-.project-label {
-}
 
 /*--------- section #skills ----------*/
 
@@ -369,13 +373,5 @@ a:hover {
 
     .date {
         text-align: end;
-    }
-
-    .project-container {
-        width: 49%;
-        display: none;
-    }
-    .project-container.active {
-        display: inline-block;
     }
 }
