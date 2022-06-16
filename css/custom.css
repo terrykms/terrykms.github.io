@@ -5,19 +5,15 @@ body {
     color: #efefef
 }
 
-.about p {
-    text-align: justify;
-}
-
-
 h1 {
     font-size: 56px;
-    font-family: "Titillium Web";
+    font-weight: 700;
     text-shadow: 3px 3px #f4db7d
 }
 
 h2 {
     font-family: "Bebas Neue";
+    color:#bebebe;
 }
 
 h3 {
@@ -40,7 +36,6 @@ h3 {
 .navbar {
     transition: top 0.3s ease;
 }
-
 
 
 .navbar-color {
@@ -67,10 +62,6 @@ h3 {
     opacity: 1
 }
 
-h2.reveal.current {
-    opacity: 0.7;
-}
-
 
 /*--------- Emphasis span ----------*/
 span.highlight {
@@ -87,7 +78,17 @@ span.highlight a:hover {
 }
 
 
+/*--------- section #intro ----------*/
 
+#intro {
+    padding: 0;
+    text-align: center;
+    background-color: #212226;
+}
+
+#intro p {
+    color: #9daaf2
+}
 
 /*--------- Resume Button ----------*/
 
@@ -110,25 +111,16 @@ a.button:hover {
 }
 
 
-/*--------- section #intro ----------*/
-
-#intro {
-    padding: 0;
-    text-align: center;
-    background-color: #212226;
-}
-
-#intro p {
-    color: #9daaf2
-}
-
-
 /*--------- section #about ----------*/
 
 .profile {
     width: 256px;
     height: 256px;
     border-radius: 0.5em;
+}
+
+.about p {
+    text-align: justify;
 }
 
 /*--------- section #experience ----------*/
@@ -154,37 +146,7 @@ ul.role-description{
     list-style-position: inside;
 }
 
-
-/*--------- section #projects (DESIGN 1) ----------*/
-
-.accordion-button {
-    background-color: #52545e !important;
-    color: #efefef !important;
-}
-
-.accordion-item {
-    background-color: #2c2d32
-}
-
-.accordion-body ul {
-    color: #bebebe;
-}
-
-.card {
-    width: 95%;
-    background-color: #52545e;
-    margin: 0;
-    padding: 0;
-}
-
-.card-title {
-    font-size: 20px;
-    font-weight: bolder;
-    color:#9daaf2
-}
-
-
-/*--------- section #projects (DESIGN 2) ----------*/
+/*--------- section #projects ----------*/
 
 /* navigation */ 
 span.nav-link {
@@ -369,7 +331,7 @@ a:hover {
 
 @media only screen and (min-width: 992px) {
     h1 {
-        font-size: 84px;
+        font-size: 96px;
     }
 
     .date {

@@ -1,6 +1,7 @@
 const ELEMENT_VISIBLE_TRIGGER = 100;
 
-function reveal() {
+/* ------- css animations on content upon scroll up ------ */
+const reveal = function() {
     var reveals = document.querySelectorAll(".reveal");
     reveals.forEach(item => {
         var windowHeight = window.innerHeight;
@@ -14,11 +15,24 @@ function reveal() {
         }
     })
 }
+window.addEventListener("scroll", reveal);
 
-window.addEventListener("scroll", reveal)
 
-/* custom dropdown for each project container */
-var arrow = document.querySelectorAll("span.btn i");
+/* ------- navbar animations on content upon scroll ------ */
+var navbar = document.querySelector(".navbar");
+var previousPageScroll = 0;
+
+window.onscroll = function() {
+    var currentPageScroll = window.scrollY;
+    if (currentPageScroll > 200) {
+        // true("scroll up") -> show navbar : false("scroll down") -> hide navbar
+        (previousPageScroll - currentPageScroll > 0) ? navbar.style.top = "0" : navbar.style.top ="-74px";
+    }
+    previousPageScroll = currentPageScroll;    // update
+}
+
+/* --------- custom dropdown for each project container -------- */
+let arrow = document.querySelectorAll("span.btn i");
 arrow.forEach(item => {
     item.onclick = function() {
         var details = this.parentNode.parentNode.nextSibling.nextSibling; //access div.details element
@@ -27,14 +41,14 @@ arrow.forEach(item => {
     }
 })
 
-// projects filters
+/* --------- section #projects filtering based on category -------- */
 var projects = document.querySelectorAll(".project-container");
 var filters = document.querySelectorAll(".projects .nav-link");
 
 // initialization
 projects.forEach(project => {
-    (project.getAttribute("data-value") == "academic") ? project.parentNode.classList.remove("hide") : project.parentNode.classList.add("hide");
     // project.parentNode is  <div class="col-lg-6 col-12">
+    (project.getAttribute("data-value") == "academic") ? project.parentNode.classList.remove("hide") : project.parentNode.classList.add("hide");
 })
 
 filters.forEach(item => {
@@ -61,20 +75,3 @@ var typed = new Typed("#typed", {
     startDelay: 30,
     loop: true
 });
-
-
-
-var navbar = document.querySelector(".navbar");
-var previousPageScroll = 0;
-
-window.onscroll = function() {
-    var currentPageScroll = window.scrollY;
-
-     // true("scroll up") -> show navbar : false("scroll down") -> hide navbar
-    if (currentPageScroll > 200) {
-        (previousPageScroll - currentPageScroll > 0) ? navbar.style.top = "0" : navbar.style.top ="-74px";
-    }
-
-    // update
-    previousPageScroll = currentPageScroll;
-}
