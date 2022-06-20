@@ -18,6 +18,7 @@ const reveal = function() {
 window.addEventListener("scroll", reveal);
 
 
+
 /* ------- navbar animations on content upon scroll ------ */
 var navbar = document.querySelector(".navbar");
 var previousPageScroll = 0;
